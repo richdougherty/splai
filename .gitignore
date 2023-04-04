@@ -1,0 +1,12 @@
+# Splai working files
+/.splai/
+
+# Ignore Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Ignore Python virtual environments
+venv/
+*.venv

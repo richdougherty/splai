@@ -1,0 +1,14 @@
+This project is called Splai. It's being developed by Rich Dougherty to
+provide AI tools that you can use in software development projects. It's
+a bit of an experiment.
+
+One thing that's useful is to bring extra context into the project, such
+as knowledge about dependencies or project documentation. This means
+part of the project is gathering and indexing this information.
+
+This information can be used by an agent to answer questions about the
+project. In the future the agent may be able to help with project
+changes or review.
+
+The project uses LangChain (https://langchain.com/) and OpenAI APIs
+to implement the agent AI.
