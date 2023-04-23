@@ -1,1 +1,34 @@
-# Splai project settings
+version: '0.1.0'
+knowledge:
+  sources:
+  - url: https://blog.langchain.dev/langchain-unstructured/
+  - url: https://openai.com/pricing
+  - url: https://platform.openai.com/docs/api-reference?lang=python
+  - url: https://platform.openai.com/docs/models
+  - url: https://python.langchain.com/en/latest/getting_started/getting_started.html
+  - url: https://python.langchain.com/en/latest/index.html
+  - url: https://python.langchain.com/en/latest/index.html
+  - url: https://python.langchain.com/en/latest/modules/agents/agents/examples/mrkl_chat.html
+  - url: https://python.langchain.com/en/latest/modules/agents/getting_started.html
+  - url: https://python.langchain.com/en/latest/modules/agents/toolkits/examples/vectorstore.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/document_loaders.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/directory_loader.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/html.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/markdown.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/document_loaders/examples/unstructured_file.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/getting_started.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/text_splitters.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/text_splitters/examples/character_text_splitter.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/text_splitters/examples/recursive_text_splitter.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/vectorstores.html
+  - url: https://python.langchain.com/en/latest/modules/indexes/vectorstores/examples/chroma.html
+  - url: https://python.langchain.com/en/latest/modules/memory.html
+  - url: https://python.langchain.com/en/latest/modules/memory/examples/adding_memory.html
+  - url: https://python.langchain.com/en/latest/modules/memory/examples/agent_with_memory_in_db.html
+  - url: https://python.langchain.com/en/latest/modules/memory/examples/agent_with_memory.html
+  - url: https://python.langchain.com/en/latest/modules/memory/getting_started.html
+  - url: https://python.langchain.com/en/latest/modules/models/chat/getting_started.html
+  - url: https://python.langchain.com/en/latest/modules/models/llms/examples/llm_caching.html
+  - url: https://python.langchain.com/en/latest/modules/models/llms/getting_started.html
+  - url: https://python.langchain.com/en/latest/modules/models/text_embedding/examples/openai.html
+  - url: https://python.langchain.com/en/latest/use_cases/question_answering.html

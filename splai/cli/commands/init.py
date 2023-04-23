@@ -5,9 +5,9 @@ from splai.utils import find_project_root
 def add_parser(subparsers):
     parser = subparsers.add_parser("init", help="Initialize a new Splai project with settings.")
     parser.add_argument("directory", nargs="?", default=".", help="Target directory for the .splai settings file (defaults to current directory).")
-    parser.set_defaults(func=command)
+    parser.set_defaults(func=init_command)
 
-def command(args):
+def init_command(args):
     target_directory = args.directory
     # FIXME: Require --force if already exists in parent dir
 

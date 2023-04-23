@@ -10,7 +10,7 @@ from langchain.agents.agent_toolkits import (
 )
 from splai.utils import find_project_root
 
-def command(args):
+def ask_command(args):
     project_root = find_project_root()
     splai_directory = os.path.join(project_root, ".splai")
     chromadb_directory = os.path.join(splai_directory, "chromadb")
@@ -48,4 +48,4 @@ def command(args):
 def add_parser(subparsers):
     parser = subparsers.add_parser("ask", help="Ask a question to the agent")
     parser.add_argument("question", help="Question to ask the agent")
-    parser.set_defaults(func=command)
+    parser.set_defaults(command_func=ask_command)
