@@ -9,9 +9,9 @@ from langchain.vectorstores import Chroma
 def add_parser(subparsers):
     parser = subparsers.add_parser("request", aliases=["req"], help="Request the agent to perform an action.")
     parser.add_argument("question_or_task", help="The question or task for the agent to perform.")
-    parser.set_defaults(func=command)
+    parser.set_defaults(command_func=request_command)
 
-def command(args):
+def request_command(args):
     perform_request(args.question_or_task)
 
 def perform_request(question_or_task):
