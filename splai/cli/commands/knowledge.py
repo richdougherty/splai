@@ -10,7 +10,7 @@ from splai.utils import find_project_root
 from langchain.embeddings.openai import OpenAIEmbeddings
 from langchain.vectorstores import Chroma
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.document_loaders import TextLoader
+from langchain.document_loaders import DirectoryLoader
 
 def add_parser(subparsers):
     knowledge_parser = subparsers.add_parser("knowledge", help="Index and query knowledge from the repo.", aliases=["know", "kn"])
@@ -142,8 +142,16 @@ def fetch_url(url):
 def index_update(args):
     project_root = find_project_root()
 
-    knowledge_file = os.path.join(project_root, "knowledge.txt")
-    loader = TextLoader(knowledge_file)
+    project_root = find_project_root()
+    urls_directory = os.path.join(project_root, ".splai", "knowledge", "urls")
+
+    loader = DirectoryLoader(urls_directory)
+    # TODO: Metadata
+
+    # loader = UnstructuredHTMLLoader("example_data/fake-content.html")
+
+    # knowledge_file = os.path.join(project_root, "knowledge.txt")
+    # loader = TextLoader(knowledge_file)
     documents = loader.load()
 
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=800, chunk_overlap=0)
