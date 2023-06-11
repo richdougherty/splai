@@ -3,6 +3,11 @@ development projects. It uses the LangChain library and OpenAI APIs.
 
 # Usage
 
+```
+docker build -f .devcontainer/Dockerfile . -t splai-devcontainer
+docker run -it --rm splai-devcontainer
+```
+
 1. Install the [Poetry](https://python-poetry.org/) tool into your
    environment.
 

@@ -1,0 +1,9 @@
+version: '3'
+services:
+  devcontainer:
+    build:
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/home/devuser/src
+    working_dir: /home/devuser/src
+    command: sleep infinity
